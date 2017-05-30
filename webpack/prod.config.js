@@ -4,6 +4,8 @@ var webpack                                             = require('webpack');
 var ExtractTextPlugin                                   = require('extract-text-webpack-plugin');
 var nib                                                 = require('nib');
 
+var PostCssConfig                                       = require('./postcss.config.js');
+
 var ProdWebpackConfig = {
   devtool: 'cheap-source-map',
 
@@ -51,9 +53,7 @@ var ProdWebpackConfig = {
             },
             {
               loader: 'postcss-loader',
-              options: {
-                config: path.resolve(__dirname, './postcss.config.js')
-              }
+              options: PostCssConfig
             }
           ]
         })
@@ -72,9 +72,7 @@ var ProdWebpackConfig = {
             },
             {
               loader: 'postcss-loader',
-              options: {
-                config: path.resolve(__dirname, './postcss.config.js')
-              }
+              options: PostCssConfig
             }
           ]
         })
@@ -90,9 +88,7 @@ var ProdWebpackConfig = {
             },
             {
               loader: 'postcss-loader',
-              options: {
-                config: path.resolve(__dirname, './postcss.config.js')
-              }
+              options: PostCssConfig
             },
             {
               loader: 'stylus-loader',

@@ -1,4 +1,5 @@
 module.exports = {
+  sourceMap: 'inline',
   plugins: [
     require('postcss-global-import')(),
     require('postcss-import')(),
