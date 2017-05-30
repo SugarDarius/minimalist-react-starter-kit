@@ -10,7 +10,6 @@ import {AppContainer as ReactHotLoaderContainer}              from 'react-hot-lo
 
 import Root                                                   from './containers/root';
 
-console.log('Welcome to Bebop source code !!');
 const mountNode = document.getElementById('react-view-root');
 
 const renderClient = (Component) => {

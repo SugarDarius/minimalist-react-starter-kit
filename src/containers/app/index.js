@@ -6,11 +6,13 @@
 
 import React                            from 'react';
 
+import {HelloWorld}                     from '../../components';
+
 export default class App extends React.Component {
   render() {
     return (
       <div className='app-container'>
-        {'Hello world !!'}
+        <HelloWorld />
       </div>
     );
   }

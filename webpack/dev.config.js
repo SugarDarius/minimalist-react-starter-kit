@@ -5,6 +5,8 @@ import nib                                                 from 'nib';
 
 import {webpackHost, webpackPort}                          from '../config/env';
 
+import * as PostCssConfig                                  from './postcss.config.js';
+
 const DevWebpackConfig = {
   devtool: 'cheap-eval-source-map',
 
@@ -55,9 +57,7 @@ const DevWebpackConfig = {
           },
           {
             loader: 'postcss-loader',
-            options: {
-              config: path.resolve(__dirname, './postcss.config.js')
-            }
+            options: PostCssConfig
           }
         ]
       },
@@ -74,9 +74,7 @@ const DevWebpackConfig = {
           },
           {
             loader: 'postcss-loader',
-            options: {
-              config: path.resolve(__dirname, './postcss.config.js')
-            }
+            options: PostCssConfig
           }
         ]
       },
@@ -92,9 +90,7 @@ const DevWebpackConfig = {
           },
           {
             loader: 'postcss-loader',
-            options: {
-              config: path.resolve(__dirname, './postcss.config.js')
-            }
+            options: PostCssConfig
           },
           {
             loader: 'stylus-loader',
