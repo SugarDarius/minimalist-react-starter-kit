@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "latest",
+    "stage-0",
+    "react",
+    "airbnb"
+  ],
+  "ignore": [
+    "./src/client.js"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "name": "minimalist-react-starter-kit",
+  "version": "1.0.1",
+  "description": "Minimalist React Starter Kit ",
+  "keywords": [
+    "minimalist",
+    "react",
+    "starter",
+    "kit"
+  ],
+  "author": "Aurélien Dupays Dexemple <dupays.aurelien@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SugarDarius/minimalist-react-starter-kit.git"
+  },
+  "homepage": "https://github.com/SugarDarius/minimalist-react-starter-kit#readme",
+  "bugs": {
+    "url": "https://github.com/SugarDarius/minimalist-react-starter-kit/issues"
+  },
+  "scripts": {
+    "dev:start": "concurrently --kill-others \"npm run dev:webpack-server\" \"npm run dev:server\" ",
+    "dev:webpack-server": "better-npm-run dev:webpack-server",
+    "dev:server": "better-npm-run dev:server"
+  },
+  "betterScripts": {
+    "dev:webpack-server": {
+      "command": "babel-node ./webpack/dev.server.js",
+      "env": {
+        "NODE_PATH": "./webpack",
+        "NODE_ENV": "development"
+      }
+    },
+    "dev:server": {
+      "command": "nodemon ./src/server.js --exec babel-node",
+      "env": {
+        "NODE_PATH": "./src",
+        "NODE_ENV": "development"
+      }
+    }
+  },
+  "dependencies": {
+    "babel-cli": "6.24.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-decorators-legacy": "1.3.4",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-polyfill": "6.23.0",
+    "babel-preset-airbnb": "2.2.3",
+    "babel-preset-latest": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "better-npm-run": "0.0.15",
+    "body-parser": "1.17.2",
+    "chalk": "1.1.3",
+    "classnames": "2.2.5",
+    "compression": "1.6.2",
+    "concurrently": "3.4.0",
+    "cookie-parser": "1.4.3",
+    "express": "4.15.3",
+    "helmet": "3.6.1",
+    "hpp": "0.2.2",
+    "lodash": "4.17.4",
+    "moment": "2.18.1",
+    "morgan": "1.8.2",
+    "prop-types": "15.5.10",
+    "react": "15.5.4",
+    "react-dom": "15.5.4",
+    "react-router": "4.1.1",
+    "react-router-dom": "4.1.1",
+    "serve-favicon": "2.4.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "7.1.1",
+    "babel-loader": "7.0.0",
+    "css-loader": "0.28.4",
+    "file-loader": "0.11.1",
+    "json-loader": "0.5.4",
+    "nib": "1.1.2",
+    "node-sass": "4.5.3",
+    "pixrem": "3.0.2",
+    "pleeease-filters": "4.0.0",
+    "postcss": "6.0.1",
+    "postcss-calc": "6.0.0",
+    "postcss-color-function": "4.0.0",
+    "postcss-custom-media": "6.0.0",
+    "postcss-custom-properties": "6.0.1",
+    "postcss-custom-selectors": "4.0.1",
+    "postcss-flexbugs-fixes": "3.0.0",
+    "postcss-global-import": "1.0.0",
+    "postcss-import": "10.0.0",
+    "postcss-loader": "2.0.5",
+    "postcss-media-minmax": "3.0.0",
+    "postcss-nested": "2.0.2",
+    "postcss-nesting": "4.0.1",
+    "postcss-selector-matches": "3.0.1",
+    "postcss-selector-not": "3.0.1",
+    "react-hot-loader": "3.0.0-beta.6",
+    "sass-loader": "6.0.5",
+    "style-loader": "0.18.1",
+    "stylus": "0.54.5",
+    "stylus-loader": "3.0.1",
+    "url-loader": "0.5.8",
+    "webpack": "2.6.1",
+    "webpack-dev-middleware": "1.10.2",
+    "webpack-hot-middleware": "2.18.0"
+  }
+}
