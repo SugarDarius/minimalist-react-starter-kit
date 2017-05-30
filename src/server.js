@@ -29,7 +29,7 @@ app.use(cookieParser());
 app.use(morgan('dev'));
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.resolve(__dirname, '../public')));
+  app.use(express.static(path.resolve(__dirname, '../build')));
 }
 
 // app.use(favicon(path.resolve(__dirname, './assets/favicon/favicon.ico')));

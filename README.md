@@ -24,14 +24,14 @@ To run the project in development make the command
 sudo npm run dev:start
 ```
 
-### Production
-To deploy the project in production make the command
+### Production build
+To build your production make the command
 
 ```
-sudo npm run prod:init
+sudo npm run prod:build
 ```
 
-And be sure to use a process manager utility (e.g. PM2) in accordance with your web server
+And be sure to use a process manager utility (e.g. PM2) in accordance with your web server to make the production work perfectly.
 
 ## Build with
 

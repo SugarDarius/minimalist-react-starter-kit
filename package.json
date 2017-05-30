@@ -21,7 +21,8 @@
   "scripts": {
     "dev:start": "concurrently --kill-others \"npm run dev:webpack-server\" \"npm run dev:server\" ",
     "dev:webpack-server": "better-npm-run dev:webpack-server",
-    "dev:server": "better-npm-run dev:server"
+    "dev:server": "better-npm-run dev:server",
+    "prod:build": "better-npm-run prod:build"
   },
   "betterScripts": {
     "dev:webpack-server": {
@@ -36,6 +37,13 @@
       "env": {
         "NODE_PATH": "./src",
         "NODE_ENV": "development"
+      }
+    },
+    "prod:build": {
+      "command": "webpack --progress --config ./webpack/prod.config.js",
+      "env": {
+        "NODE_PATH": "./webpack",
+        "NODE_ENV": "production"
       }
     }
   },
@@ -73,6 +81,7 @@
     "autoprefixer": "7.1.1",
     "babel-loader": "7.0.0",
     "css-loader": "0.28.4",
+    "extract-text-webpack-plugin": "2.1.0",
     "file-loader": "0.11.1",
     "json-loader": "0.5.4",
     "nib": "1.1.2",
