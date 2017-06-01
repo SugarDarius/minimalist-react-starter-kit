@@ -24,6 +24,9 @@ To run the project in development make the command
 sudo npm run dev:start
 ```
 
+The application is server on port *2727* and the webpack development server on port *2728*.
+You can modify the port in the file *config/env.js*.
+
 ### Production build
 To build your production make the command
 
