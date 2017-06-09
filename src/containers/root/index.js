@@ -11,7 +11,7 @@ import {Route}                          from 'react-router-dom';
 import App                              from '../app';
 
 const Root = () => (
-  <Router history={history}>
+  <Router>
     <Route exact path='/' component={App} />
   </Router>
 );
